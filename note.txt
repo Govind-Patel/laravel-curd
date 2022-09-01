@@ -1,0 +1,58 @@
+coposer install 
+
+--create laravel project -----
+
+composer create-project laravel/laravel Folder_Name
+
+---Run laravel Project -----
+php artisan serve 
+---Run Multiple project ----
+php artisan serve --port=8001 
+
+database connection into  Env file 
+-------------
+
+
+create migration and model :
+---------------
+php artisan make:model User -mc  //  model migration controller 
+php artisan make:model User -m  //  model migration
+php artisan make:model User     //  moddel 
+php artisan make:migration users //  migration 
+php artisan make:controller  UserController     //  controller 
+
+
+generate new tables by migration
+-------------
+php artisan migrate
+php artisan migrate:fresh
+
+ defaulenablet  routing 
+---------
+app\Providers\RouteServiceProvider.php
+
+enable  to  this bellow 
+------------
+protected $namespace = 'App\\Http\\Controllers';
+
+
+
+419 ->  PAGE EXPIRED ::  csrf token missing 
+---------------
+laravel ::  7 
+{{ csrf_token() }}
+
+@csrf
+
+get All request  in controller 
+--------------
+
+$request->all()
+
+
+---------------------
+Regitration
+list 
+edit
+update
+delete
